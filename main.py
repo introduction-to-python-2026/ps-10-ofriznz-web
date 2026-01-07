@@ -6,7 +6,7 @@ from scipy.signal import convolve2d
 import matplotlib.pyplot as plt
 from image_utils import load_image, edge_detection
 
-image = load_image('.tests/lena.jpg')  
+image = load_image('waterfall.jpg')  
 
 # 2. ניקוי רעשים - שימוש ב-disk(3) כי התמונה דו-ממדית
 clean_image = median(image, disk(3))  
